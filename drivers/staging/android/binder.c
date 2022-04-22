@@ -4242,7 +4242,7 @@ retry:
 				task_tgid_nr_ns(sender,
 						task_active_pid_ns(current));
 			
-			if (binder_global_pid_lookups && tr->sender_pid == 0)
+			if (binder_global_pid_lookups && trd->sender_pid == 0)
 				trd->sender_pid = task_tgid_nr(sender);
 		} else {
 			trd->sender_pid = 0;
